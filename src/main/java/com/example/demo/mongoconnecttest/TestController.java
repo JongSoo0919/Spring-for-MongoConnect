@@ -1,5 +1,6 @@
-package com.example.demo.MongoConnectTest;
+package com.example.demo.mongoconnecttest;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/TEST")
 public class TestController {
 
-    @RequestMapping("/")
+    @GetMapping("/")
     public String helloWorld(){
         return "hello world!";
     }
